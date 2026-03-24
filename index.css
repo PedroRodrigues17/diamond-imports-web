@@ -1,0 +1,204 @@
+
+.banner-camisas {
+    background: linear-gradient(135deg, #009c3b 0%, #007a2f 50%, #002776 100%);
+    max-width: 1160px;
+    margin: 60px auto 0;
+    border-radius: 16px;
+    padding: 50px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    border: 2px solid #ffdf00;
+    box-shadow: 0 0 40px rgba(255, 223, 0, 0.15);
+    position: relative;
+    overflow: hidden;
+}
+
+.banner-camisas::before {
+    content: '🇧🇷';
+    position: absolute;
+    font-size: 16rem;
+    opacity: 0.07;
+    right: -30px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+.banner-camisas-texto {
+    position: relative;
+    z-index: 1;
+}
+
+.banner-camisas-texto .badge {
+    display: inline-block;
+    background: #ffdf00;
+    color: #002776;
+    font-weight: bold;
+    font-size: 0.75rem;
+    padding: 5px 14px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+.banner-camisas-texto h2 {
+    font-size: 2.2rem;
+    color: #ffdf00;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    line-height: 1.2;
+    margin-bottom: 12px;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.3);
+}
+
+.banner-camisas-texto p {
+    color: rgba(255,255,255,0.85);
+    font-size: 1rem;
+    margin-bottom: 25px;
+    font-style: italic;
+}
+
+.preco-banner {
+    display: block;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.btn-banner {
+    display: inline-block;
+    background: #ffdf00;
+    color: #002776;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 14px 32px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: 0.3s;
+    box-shadow: 0 4px 15px rgba(255,223,0,0.3);
+}
+
+.btn-banner:hover {
+    background: #fff;
+    box-shadow: 0 4px 20px rgba(255,255,255,0.4);
+    transform: translateY(-2px);
+}
+
+/* ===== SEÇÃO BENEFÍCIOS ===== */
+.features {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 30px;
+}
+
+.feature-item {
+    text-align: center;
+    flex: 1;
+    min-width: 250px;
+}
+
+.feature-item h4 {
+    color: #d4af37;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+
+.feature-item p {
+    color: #888;
+    font-size: 0.9rem;
+}
+
+/* ===== SEÇÃO FEEDBACKS ===== */
+.feedback {
+    padding: 60px 20px;
+    background: #0a0a0a;
+    text-align: center;
+}
+.feedback-grid {
+    max-width: 900px;
+    margin: 40px auto 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 250px));
+    justify-content: center; /* 🔥 centraliza os 3 cards */
+    gap: 20px;
+}
+
+.feedback-card {
+    background: #151515;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid rgba(212, 175, 55, 0.2);
+    transition: 0.3s;
+}
+
+.feedback-card:hover {
+    transform: translateY(-5px);
+    border-color: #d4af37;
+}
+
+.feedback-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+}
+
+@media (max-width: 900px) {
+    .feedback-grid { grid-template-columns: repeat(2, 1fr); }
+    .banner-camisas { flex-direction: column; text-align: center; padding: 40px 25px; }
+    .banner-camisas-texto h2 { font-size: 1.7rem; }
+}
+
+@media (max-width: 500px) {
+    .feedback-grid { grid-template-columns: 1fr; }
+    .banner-camisas-texto h2 { font-size: 1.4rem; }
+}
+.card-kit {
+    position: relative;
+}
+
+.kit-badge {
+    position: absolute;
+    top: 14px;
+    left: 14px;
+    background: #d4af37;
+    color: #000;
+    font-size: 0.75rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 5px 12px;
+    border-radius: 20px;
+    z-index: 2;
+}
+
+.img-placeholder-kit {
+    width: 100%;
+    aspect-ratio: 4 / 5;
+    background: #151515;
+    border-bottom: 1px dashed #2a2a2a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #444;
+    font-size: 0.9rem;
+    text-align: center;
+    padding: 20px;
+    line-height: 2;
+}
+
+.img-placeholder-kit small {
+    font-size: 0.75rem;
+    color: #333;
+}

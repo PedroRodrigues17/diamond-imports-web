@@ -1,0 +1,146 @@
+/* =============================================
+   DIAMOND IMPORTS — camisas.css
+   ============================================= */
+
+/* ===== HERO BANNER ===== */
+.camisas-hero {
+    background: linear-gradient(135deg, #009c3b 0%, #007a2f 40%, #002776 100%);
+    padding: 70px 20px;
+    text-align: center;
+    border-bottom: 3px solid #ffdf00;
+    position: relative;
+    overflow: hidden;
+}
+
+.camisas-hero::before {
+    content: '🇧🇷';
+    position: absolute;
+    font-size: 18rem;
+    opacity: 0.06;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+}
+
+.camisas-hero-content {
+    position: relative;
+    z-index: 1;
+}
+
+.badge {
+    display: inline-block;
+    background: #ffdf00;
+    color: #002776;
+    font-weight: bold;
+    font-size: 0.85rem;
+    padding: 6px 16px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.camisas-hero h1 {
+    font-size: 3rem;
+    color: #ffdf00;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    line-height: 1.2;
+    margin-bottom: 15px;
+    text-shadow: 0 2px 10px rgba(0,0,0,0.4);
+}
+
+.camisas-hero p {
+    color: rgba(255,255,255,0.85);
+    font-size: 1.1rem;
+    font-style: italic;
+}
+
+/* ===== CARD ESPECIAL CAMISA ===== */
+.camisa-card {
+    max-width: 420px;
+    margin: 0 auto;
+}
+
+/* ===== PLACEHOLDER DE IMAGEM ===== */
+.img-placeholder {
+    width: 100%;
+    aspect-ratio: 4 / 5;
+    background: #1a1a1a;
+    border-bottom: 1px dashed #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #555;
+    font-size: 0.95rem;
+    text-align: center;
+    padding: 20px;
+    line-height: 1.8;
+}
+
+.img-placeholder small {
+    font-size: 0.78rem;
+    color: #444;
+}
+
+/* ===== TAMANHOS ===== */
+.tamanhos {
+    margin: 10px 0;
+}
+
+.tamanho-label {
+    display: block;
+    font-size: 0.8rem;
+    color: #888;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.tamanho-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: center;
+}
+
+.tamanho-btn {
+    background: transparent;
+    border: 1px solid #d4af37;
+    color: #d4af37;
+    width: 50px;
+    height: 50px;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.tamanho-btn:hover {
+    background: #d4af37;
+    color: #000;
+}
+
+.sem-estoque {
+    color: #666;
+    font-size: 0.85rem;
+    width: 100%;
+    text-align: center;
+}
+
+.sem-estoque a {
+    color: #d4af37;
+    text-decoration: none;
+}
+
+.sem-estoque a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+    .camisas-hero h1 {
+        font-size: 2rem;
+    }
+}
