@@ -1,43 +1,56 @@
-
 .banner-camisas {
-    background: linear-gradient(135deg, #009c3b 0%, #007a2f 50%, #002776 100%);
+    position: relative;
     max-width: 1160px;
     margin: 60px auto 0;
-    border-radius: 16px;
+    border-radius: 18px;
     padding: 50px 40px;
+    overflow: hidden;
+
+    
+    background: url("imagens-camisa/Banner\ Seleção\ Brasileira\ Torcida\ de\ Futebol\ Estilo\ Ousado\ Chamativo\ e\ Grunge\ Amarelo\ Verde.png") center/cover no-repeat;
+
+    
+    min-height: 320px;
+
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    gap: 30px;
     border: 2px solid #ffdf00;
-    box-shadow: 0 0 40px rgba(255, 223, 0, 0.15);
-    position: relative;
-    overflow: hidden;
+    box-shadow: 0 0 35px rgba(255, 223, 0, 0.18);
 }
 
-.banner-camisas::before {
-    content: '🇧🇷';
+.overlay-banner {
     position: absolute;
-    font-size: 16rem;
-    opacity: 0.07;
-    right: -30px;
-    top: 50%;
-    transform: translateY(-50%);
-    pointer-events: none;
+    inset: 0;
+    background: linear-gradient(
+        135deg,
+        rgba(0, 156, 59, 0.55) 0%,
+        rgba(0, 122, 47, 0.45) 35%,
+        rgba(0, 39, 118, 0.50) 100%
+    );
+    z-index: 1;
+}
+
+.banner-camisas::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.28);
+    z-index: 1;
 }
 
 .banner-camisas-texto {
     position: relative;
-    z-index: 1;
+    z-index: 2;
+    max-width: 460px;
 }
 
-.banner-camisas-texto .badge {
+.badge {
     display: inline-block;
     background: #ffdf00;
     color: #002776;
     font-weight: bold;
     font-size: 0.75rem;
-    padding: 5px 14px;
+    padding: 6px 14px;
     border-radius: 20px;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -45,25 +58,25 @@
 }
 
 .banner-camisas-texto h2 {
-    font-size: 2.2rem;
+    font-size: 2.4rem;
     color: #ffdf00;
     text-transform: uppercase;
-    letter-spacing: 3px;
-    line-height: 1.2;
+    letter-spacing: 2px;
+    line-height: 1.15;
     margin-bottom: 12px;
-    text-shadow: 0 2px 8px rgba(0,0,0,0.3);
+    text-shadow: 0 3px 10px rgba(0,0,0,0.35);
 }
 
 .banner-camisas-texto p {
-    color: rgba(255,255,255,0.85);
+    color: rgba(255,255,255,0.9);
     font-size: 1rem;
-    margin-bottom: 25px;
+    margin-bottom: 22px;
     font-style: italic;
 }
 
 .preco-banner {
     display: block;
-    font-size: 1.8rem;
+    font-size: 2rem;
     font-weight: bold;
     color: #ffffff;
     margin-bottom: 20px;
@@ -76,21 +89,19 @@
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 1px;
-    padding: 14px 32px;
-    border-radius: 8px;
+    padding: 14px 30px;
+    border-radius: 10px;
     text-decoration: none;
-    font-size: 0.95rem;
     transition: 0.3s;
     box-shadow: 0 4px 15px rgba(255,223,0,0.3);
 }
 
 .btn-banner:hover {
     background: #fff;
-    box-shadow: 0 4px 20px rgba(255,255,255,0.4);
     transform: translateY(-2px);
 }
 
-/* ===== SEÇÃO BENEFÍCIOS ===== */
+
 .features {
     display: flex;
     justify-content: space-around;

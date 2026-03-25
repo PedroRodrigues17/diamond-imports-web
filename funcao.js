@@ -1,6 +1,6 @@
 
 
-const NUMERO_WHATSAPP = "5583987134988";
+const NUMERO_WHATSAPP = "558398018453";
 
 function comprar(produto) {
     const mensagem = `Olá! Tenho interesse no ${produto} da Diamond Imports.`;

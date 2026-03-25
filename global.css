@@ -13,13 +13,13 @@ body {
     overflow-x: hidden;
 }
 
-/* ===== LOGO ===== */
+
 .logo {
     width: 220px;
     margin-bottom: 15px;
 }
 
-/* ===== HEADER ===== */
+
 header {
     text-align: center;
     padding: 50px 20px;
@@ -33,7 +33,7 @@ header p {
     margin-bottom: 25px;
 }
 
-/* ===== MENU DE CATEGORIAS ===== */
+
 .category-bar {
     display: flex;
     justify-content: center;
@@ -61,7 +61,7 @@ header p {
     background: rgba(212, 175, 55, 0.05);
 }
 
-/* ===== TÍTULO DAS SEÇÕES ===== */
+
 .section-title {
     text-align: center;
     font-size: 2rem;
@@ -70,7 +70,7 @@ header p {
     letter-spacing: 2px;
 }
 
-/* ===== GRID Dos PRODUTOS ===== */
+
 .container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -80,7 +80,7 @@ header p {
     padding: 0 20px;
 }
 
-/* ===== CARD ===== */
+
 .perfume-card {
     background: #151515;
     border: 1px solid #222;
@@ -97,7 +97,7 @@ header p {
     box-shadow: 0 0 25px rgba(212, 175, 55, 0.25);
 }
 
-/* ===== IMAGEM ===== */
+
 .perfume-card img {
     width: 100%;
     aspect-ratio: 4 / 5;
@@ -105,7 +105,7 @@ header p {
     display: block;
 }
 
-/* ===== INFORMAÇÕES ===== */
+
 .info {
     padding: 25px;
     flex-grow: 1;
@@ -136,7 +136,7 @@ header p {
     margin: 15px 0;
 }
 
-/* ===== BOTÃO COMPRAR ===== */
+
 .btn-buy {
     background: transparent;
     border: 1px solid #d4af37;
@@ -165,7 +165,7 @@ footer {
     margin-top: 60px;
 }
 
-/* ===== BOTÃO WHATSAPP FLUTUANTE NO CANTO Da tela===== */
+
 .whatsapp-float {
     position: fixed;
     bottom: 25px;
@@ -192,7 +192,7 @@ footer {
     box-shadow: 0 0 20px rgba(37, 211, 102, 0.8);
 }
 
-/* ===== RESPONSIVO ===== */
+
 @media (max-width: 900px) {
     .container {
         grid-template-columns: repeat(2, 1fr);

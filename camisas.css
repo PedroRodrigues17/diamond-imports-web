@@ -1,8 +1,4 @@
-/* =============================================
-   DIAMOND IMPORTS — camisas.css
-   ============================================= */
 
-/* ===== HERO BANNER ===== */
 .camisas-hero {
     background: linear-gradient(135deg, #009c3b 0%, #007a2f 40%, #002776 100%);
     padding: 70px 20px;
@@ -22,7 +18,7 @@
     transform: translate(-50%, -50%);
     pointer-events: none;
 }
-
+    
 .camisas-hero-content {
     position: relative;
     z-index: 1;
@@ -57,13 +53,13 @@
     font-style: italic;
 }
 
-/* ===== CARD ESPECIAL CAMISA ===== */
+
 .camisa-card {
     max-width: 420px;
     margin: 0 auto;
 }
 
-/* ===== PLACEHOLDER DE IMAGEM ===== */
+
 .img-placeholder {
     width: 100%;
     aspect-ratio: 4 / 5;
@@ -84,7 +80,7 @@
     color: #444;
 }
 
-/* ===== TAMANHOS ===== */
+
 .tamanhos {
     margin: 10px 0;
 }
